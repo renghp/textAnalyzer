@@ -1,0 +1,62 @@
+# depslib dependency file v1.0
+1413831988 source:c:\users\josepedro\desktop\another.gigante\trabalho ed\trabalho ed\header.c
+	"header.h"
+
+1413831889 source:c:\users\josepedro\desktop\another.gigante\trabalho ed\trabalho ed\main.c
+	<stdio.h>
+	<stdlib.h>
+	"header.h"
+
+1413831116 c:\users\josepedro\desktop\another.gigante\trabalho ed\trabalho ed\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1413823778 c:\users\josepedro\desktop\another.gigante\trabalho ed\trabalho ed\header.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1413832722 source:c:\users\josepedro\desktop\trabalho ed\header.c
+	"header.h"
+
+1413831116 c:\users\josepedro\desktop\trabalho ed\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1415317811 source:c:\users\josepedro\desktop\trabalho ed\main.c
+	<stdio.h>
+	<stdlib.h>
+	"header.h"
+
+1415458732 source:c:\users\renan\desktop\trabalhoedcic\header.c
+	"header.h"
+
+1413831116 c:\users\renan\desktop\trabalhoedcic\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1415460498 source:c:\users\renan\desktop\trabalhoedcic\main.c
+	<stdio.h>
+	<stdlib.h>
+	"header.h"
+
+1415575965 source:c:\users\josepedro\desktop\trabalhoedcic\header.c
+	"header.h"
+
+1413831116 c:\users\josepedro\desktop\trabalhoedcic\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1416067694 source:c:\users\josepedro\desktop\trabalhoedcic\main.c
+	<stdio.h>
+	<stdlib.h>
+	"header.h"
+

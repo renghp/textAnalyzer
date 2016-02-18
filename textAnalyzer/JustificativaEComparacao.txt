@@ -1,0 +1,32 @@
+Justificativa:
+
+Para a implementação dessa segunda parte do trabalho, escolhemos o uso da Árvore Binária de Pesquisa. Como estamos tratando de palavras, a escolha trivial, porém necessária, é ordená-las alfabeticamente. Para isso as ABPs são perfeitas, pois basta inserir palavras lexicograficamente "menores" à esquerda da anterior e "maiores" à direita, o que diminui consideravelmente o processamento da posterior busca por cada palavra. Finalizadas as inserções e atualizações de frequência, é feita a passagem de todos os dados para uma lista ordenada pela frequência (visto que as palavras deveriam ser primeiramente ordenadas pela frequência e, em caso de empate, pela ordem alfabética), facilitando assim a impressão de todas os dados de maneira organizada e eficiente.
+
+Devido à baixa complexidade e ao relativamente pequeno volume de dados dos diferentes exemplos testados (vide comparações abaixo), pensamos ser desnecessária a implementação de uma árvore balanceada pela altura para esse caso de uso. Muito embora uma AVL se provaria mais eficiente, devido à maior quantidade de consultas em relação ao número de inserções do programa, encontramos resultados extremamente encorajadores na ABP criada. 
+
+
+
+Comparação entre Lista e ABP:
+
+Casos de teste utilizados:
+
+Exemplo 1: Livro "Dopo il divorzio" (352 KB):
+	Tempo de Execução via Árvore: 0.17 segundos
+	Tempo de Execução via Lista: 1.44 segundos
+
+Exemplo 2: Livro "Dopo il divorzio" repetido 100 vezes (35105 KB):
+	Tempo de Execução via Árvore: 3.11 segundos
+	Tempo de Execução via Lista: 108.8 segundos
+
+Exemplo 3: Livro "Dom Casmurro" (372 KB):
+	Tempo de Execução via Árvore: 0.19 segundos
+	Tempo de Execução via Lista: 1.44 segundos
+
+Exemplo 4: Livro "Adventure of a Kite" (51 KB):
+	Tempo de Execução via Árvore: 0.08 segundos
+	Tempo de Execução via Lista: 0.06 segundos
+
+Nosso Parecer:
+Como podemos observar pelos testes, o padrão é ter uma grande diminuição no tempo de execução do algoritmo utilizando árvore em comparação ao que usa lista. Isso se deve à redução da busca por palavras na árvore, que corta consideravelmente o número de comparações para achar a palavra requerida. 
+Podemos ver, entretanto, nos dados apresentados que isso não ocorre no exemplo 4. Tal anomalia se dá pois o texto de exemplo é consideravelmente pequeno, assim a redução de tempo durante as buscas acaba não compensando o tempo que o algoritmo leva para criar a árvore e, posteriormente, passar seus dados à lista, tornando assim a solução via árvore mais onerosa quando comparada à primeira.
+
